@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>7b602f4c-42fe-4aff-b123-550498fcdfa4</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Stepquencer</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Audio\SingleNotePlayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FileUtilities.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomScrollViewRenderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\ChangeInstrumentsPage.xaml.cs">
+      <DependentUpon>ChangeInstrumentsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\LoadPage.xaml.cs">
+      <DependentUpon>LoadPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MoreOptionsPage.xaml.cs">
+      <DependentUpon>MoreOptionsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\SavePage.xaml.cs">
+      <DependentUpon>SavePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)UIElements\InstrumentButton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UIElements\MiniGrid.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UIElements\LoadUIElement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Audio\Instrument.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Audio\Song.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Audio\SongPlayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\InfoPage.xaml.cs">
+      <DependentUpon>InfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)UIElements\LinkLabel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IStatusBar.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\ChangeInstrumentsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\LoadPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\MoreOptionsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\SavePage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Pages\InfoPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)credits.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Instruments\_colors.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)firsttimesong.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
+    <Folder Include="$(MSBuildThisFileDirectory)UIElements\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Instruments\Atmosphere.wav" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Instruments\BalladSnare.wav" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Instruments\Cabasa.wav" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Instruments\ChoirAah.wav" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Instruments\Clap.wav" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Instruments\CongaHi.wav" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Instruments\CrashCymbal.wav" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Instruments\HiHat.wav" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Instruments\KickDrum.wav" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Instruments\Piano.wav" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Instruments\PipeOrgan.wav" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Instruments\RecordScratch.wav" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Instruments\SlapBassHigh.wav" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Instruments\SlapBassLow.wav" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Instruments\SteelDrum.wav" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Instruments\SynthBrass.wav" />
+  </ItemGroup>
+</Project>
